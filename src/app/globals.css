@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Theme (Default) */
+[data-theme="dark"] {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #1a1a2e;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --primary: #ff6b35;
+  --secondary: #004e89;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-tertiary: #64748b;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --primary: #ff6b35;
+  --secondary: #004e89;
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  min-height: 100vh;
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+/* Watermark logo - bottom right corner */
+body::before {
+  content: '';
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  background-image: url('/logo-watermark.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0;
+}
+
+[data-theme="light"] body::before {
+  opacity: 0.06;
+}
+
+.glass-effect {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+[data-theme="light"] .glass-effect {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Text colors that adapt to theme */
+.text-gray-300 {
+  color: var(--text-secondary);
+}
+
+.text-gray-400 {
+  color: var(--text-tertiary);
+}
+
+.text-gray-500 {
+  color: var(--text-tertiary);
+}
+
+/* Ensure all text is visible */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+  color: var(--text-primary);
+}
+
+/* Background colors */
+[data-theme="light"] .bg-dark {
+  background-color: var(--bg-secondary);
+}
+
+[data-theme="light"] .bg-dark\/50 {
+  background-color: rgba(248, 250, 252, 0.5);
+}
+
+/* Border colors */
+[data-theme="light"] .border-gray-700 {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .border-gray-800 {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Primary color */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+/* Hover effects */
+[data-theme="light"] .hover\:bg-primary\/10:hover {
+  background-color: rgba(255, 107, 53, 0.1);
+}
+
+[data-theme="light"] .bg-primary\/10 {
+  background-color: rgba(255, 107, 53, 0.1);
+}
+
+[data-theme="light"] .bg-primary\/20 {
+  background-color: rgba(255, 107, 53, 0.2);
+}
+
+/* Text color for buttons on primary background */
+.text-dark {
+  color: #0f172a;
+}
+
+[data-theme="light"] .text-dark {
+  color: #ffffff;
+}
+
+/* Button styles */
+.glass-effect.border-2.border-primary {
+  color: var(--text-primary);
+}
+
+[data-theme="light"] .glass-effect.border-2.border-primary {
+  color: var(--text-primary);
+  background: rgba(14, 165, 233, 0.05);
+}
+
+[data-theme="light"] .glass-effect.border-2.border-primary:hover {
+  background: rgba(14, 165, 233, 0.15);
+}
+
+/* Ensure text visibility on buttons */
+[data-theme="light"] a.glass-effect {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] a.glass-effect {
+  color: var(--text-primary);
+}
+
