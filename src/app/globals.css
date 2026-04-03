@@ -11,8 +11,8 @@
   --text-tertiary: #9ca3af;
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --primary: #ff6b35;
-  --secondary: #004e89;
+  --primary: #4a90b8;
+  --secondary: #2d6a9f;
 }
 
 /* Light Theme */
@@ -24,8 +24,8 @@
   --text-tertiary: #64748b;
   --glass-bg: rgba(255, 255, 255, 0.8);
   --glass-border: rgba(0, 0, 0, 0.1);
-  --primary: #ff6b35;
-  --secondary: #004e89;
+  --primary: #4a90b8;
+  --secondary: #2d6a9f;
 }
 
 body {
@@ -36,12 +36,12 @@ body {
   position: relative;
 }
 
-/* Watermark logo - bottom right corner */
+/* Watermark logo - bottom left corner */
 body::before {
   content: '';
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   width: 200px;
   height: 200px;
   background-image: url('/logo-watermark.png');

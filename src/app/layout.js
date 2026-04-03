@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import WhatsAppButton from '@/components/WhatsAppButton'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
             <Navbar />
             {children}
             <Footer />
+            <WhatsAppButton />
           </LanguageProvider>
         </ThemeProvider>
       </body>

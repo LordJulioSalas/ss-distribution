@@ -146,7 +146,7 @@ export const translations = {
           products: 'Industrial Equipment & Chemicals'
         },
         {
-          name: 'Membranes.com',
+          name: 'Membranes',
           description: 'Membrane technology and filtration solutions',
           products: 'Filtration Products & Equipment'
         }
@@ -330,7 +330,7 @@ export const translations = {
           products: 'Equipos y Químicos Industriales'
         },
         {
-          name: 'Membranes.com',
+          name: 'Membranes',
           description: 'Tecnología de membranas y soluciones de filtración',
           products: 'Productos y Equipos de Filtración'
         }
@@ -514,7 +514,7 @@ export const translations = {
           products: 'Industriële Apparatuur & Chemicaliën'
         },
         {
-          name: 'Membranes.com',
+          name: 'Membranes',
           description: 'Membraantechnologie en filtratieoplossingen',
           products: 'Filtratieproducten & Apparatuur'
         }
@@ -698,7 +698,7 @@ export const translations = {
           products: 'Ekipo i Kímiko Industrial'
         },
         {
-          name: 'Membranes.com',
+          name: 'Membranes',
           description: 'Teknologia di membrana i solushonnan di filtrashon',
           products: 'Produktonan i Ekipo di Filtrashon'
         }
@@ -783,3 +783,4 @@ export function useLanguage() {
   }
   return context
 }
+

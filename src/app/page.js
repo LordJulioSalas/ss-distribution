@@ -2,9 +2,11 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useTheme } from '@/contexts/ThemeContext'
 
 export default function Home() {
   const { t } = useLanguage()
+  const { theme } = useTheme()
   
   return (
     <main className="min-h-screen pt-20">
@@ -13,14 +15,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10" />
         
         <div className="relative z-10 text-center px-4">
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold mb-6"
+            className="flex justify-center mb-6"
           >
-            <span className="gradient-text">{t.home.title}</span>
-          </motion.h1>
+            <img
+              src={theme === 'light' ? '/ss_distribution_final.svg' : '/ss_distribution.svg'}
+              alt="S&S Distribution"
+              style={{ height: '180px', width: 'auto', maxWidth: '90vw' }}
+            />
+          </motion.div>
           
           <motion.p
             initial={{ opacity: 0, y: 30 }}
