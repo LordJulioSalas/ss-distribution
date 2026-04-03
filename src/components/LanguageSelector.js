@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { motion, AnimatePresence } from 'framer-motion'
 
-export default function LanguageSelector() {
+export default function LanguageSelector({ mobile = false }) {
   const { language, changeLanguage } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef(null)
@@ -16,6 +16,30 @@ export default function LanguageSelector() {
   ]
 
   const currentLang = languages.find(lang => lang.code === language)
+
+  if (mobile) {
+    return (
+      <div className="w-full">
+        <div className="grid grid-cols-2 gap-2">
+          {languages.map((lang) => (
+            <button
+              key={lang.code}
+              onClick={() => changeLanguage(lang.code)}
+              className={`flex items-center justify-center gap-2 px-3 py-3 rounded-xl transition-all ${
+                language === lang.code
+                  ? 'bg-primary/20 border border-primary'
+                  : 'glass-effect'
+              }`}
+              style={{ color: language === lang.code ? 'var(--primary)' : 'var(--text-secondary)' }}
+            >
+              <span className="text-xl">{lang.flag}</span>
+              <span className="text-sm font-medium">{lang.name}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    )
+  }
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -58,12 +82,12 @@ export default function LanguageSelector() {
       <AnimatePresence>
         {isOpen && (
           <>
-            {/* Mobile: slide to right */}
+            {/* Mobile: dropdown down, aligned right */}
             <motion.div
-              initial={{ opacity: 0, x: 10 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 10 }}
-              className="md:hidden absolute left-full ml-2 top-0 w-48 rounded-lg overflow-hidden z-50 shadow-xl"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="md:hidden absolute right-0 top-full mt-2 w-48 rounded-lg overflow-hidden z-50 shadow-xl"
               style={{ 
                 backgroundColor: 'var(--bg-secondary)',
                 border: '1px solid var(--glass-border)'
