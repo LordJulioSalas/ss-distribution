@@ -3,13 +3,15 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { useTheme } from '@/contexts/ThemeContext'
 import LanguageSelector from './LanguageSelector'
 import ThemeToggle from './ThemeToggle'
-import Logo from './Logo'
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const { t } = useLanguage()
+  const { theme } = useTheme()
 
   const links = [
     { href: '/', label: t.nav.home },
@@ -24,7 +26,13 @@ export default function Navbar() {
     <nav className="fixed w-full z-50 glass-effect">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Logo />
+          <Link href="/" className="flex items-center">
+            <img
+              src={theme === 'light' ? '/ss_distribution_final.svg' : '/ss_distribution.svg'}
+              alt="S&S Distribution"
+              style={{ height: '75px', width: 'auto' }}
+            />
+          </Link>
 
           <div className="hidden md:flex items-center space-x-6 ml-auto">
             {links.map((link) => (
