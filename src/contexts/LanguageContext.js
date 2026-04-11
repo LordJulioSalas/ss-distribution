@@ -17,10 +17,49 @@ export const translations = {
     // Home Page
     home: {
       title: 'S&S Distribution',
-      subtitle: 'Industrial Chemical Products and Equipment',
-      viewProducts: 'View Products',
+      subtitle: 'Industrial Solutions & Chemical Supply in the Caribbean',
+      heroTitle: 'Industrial Solutions & Chemical Supply in the Caribbean',
+      heroDesc: 'Official representatives of leading global manufacturers in water treatment, industrial cleaning, and specialty chemicals.',
+      heroRegion: 'Serving Curaçao, Aruba, and Bonaire with reliable supply and technical expertise.',
       contactUs: 'Contact Us',
+      ourSolutions: 'Our Solutions',
+      partnershipsTitle: 'Our Strategic Partnerships',
+      partnershipsDesc: 'We proudly represent internationally recognized manufacturers, delivering high-performance industrial solutions across the Caribbean.',
+      whatWeDoTitle: 'What We Do',
+      whatWeDoDesc: 'We provide integrated industrial solutions tailored to operational needs.',
+      whyTitle: 'Why S&S Distribution',
+      industriesTitle: 'Industries We Serve',
+      regionalTitle: 'Regional Coverage',
+      regionalDesc: 'Active operations in:',
+      ctaTitle: "Let's Work Together",
+      ctaDesc: 'Contact us to discuss your project requirements, operational challenges, or product needs. Our team is ready to support your operations with reliable and high-performance solutions.',
+      ctaButton: 'Get in Touch',
+      viewProducts: 'View Products',
       advantagesTitle: 'Our Advantages',
+      partners: [
+        { name: 'Chemical Global', description: 'Supplier of high-performance specialty chemicals for industrial applications, including:', items: ['Industrial cleaning and degreasing solutions', 'Sanitation and disinfection products', 'Maintenance and operational chemicals'] },
+        { name: 'ZymeFlow', description: 'Provider of advanced chemical cleaning technologies for industrial systems, including:', items: ['Heat exchangers', 'Pipelines', 'Process equipment', 'Supporting efficient, safe, and environmentally responsible maintenance operations.'] },
+        { name: 'Hydranautics (Nitto Group)', description: 'Global leader in membrane technology for water and wastewater treatment, including:', items: ['Reverse Osmosis (RO)', 'Nanofiltration (NF)', 'Ultrafiltration (UF)', 'Serving desalination, industrial processes, and water reuse applications.'] },
+      ],
+      services: [
+        { icon: '💧', text: 'Water treatment systems and membranes' },
+        { icon: '🧪', text: 'Industrial cleaning and degreasing solutions' },
+        { icon: '🏭', text: 'Food-grade sanitation programs' },
+        { icon: '⚙️', text: 'Maintenance and specialty chemicals' },
+      ],
+      reasons: [
+        { icon: '🌐', title: 'Official Representation', desc: 'Official representation of international brands' },
+        { icon: '⚡', title: 'Local Presence', desc: 'Local presence with fast response' },
+        { icon: '🔬', title: 'Technical Knowledge', desc: 'Technical understanding of industrial operations' },
+        { icon: '📦', title: 'Reliable Supply', desc: 'Reliable supply chain in the Caribbean' },
+      ],
+      industries: [
+        { icon: '🛢️', name: 'Oil & Gas' },
+        { icon: '💧', name: 'Utilities and Water Treatment' },
+        { icon: '🍽️', name: 'Food & Beverage' },
+        { icon: '🏭', name: 'Industrial Plants and Manufacturing' },
+      ],
+      regions: ['Curaçao', 'Aruba', 'Bonaire'],
       advantages: [
         {
           title: 'Reliable Products',
@@ -146,8 +185,8 @@ export const translations = {
           products: 'Industrial Equipment & Chemicals'
         },
         {
-          name: 'Membranes',
-          description: 'Membrane technology and filtration solutions',
+          name: 'Hydranautics',
+          description: 'Global leader in membrane technology for water and wastewater treatment, including RO, NF and UF systems.',
           products: 'Filtration Products & Equipment'
         }
       ],
@@ -202,9 +241,48 @@ export const translations = {
     home: {
       title: 'S&S Distribution',
       subtitle: 'Productos Químicos Industriales y Equipos',
+      heroTitle: 'Soluciones Industriales y Suministro Químico en el Caribe',
+      heroDesc: 'Representantes oficiales de fabricantes líderes mundiales en tratamiento de agua, limpieza industrial y químicos especializados.',
+      heroRegion: 'Sirviendo a Curaçao, Aruba y Bonaire con suministro confiable y experiencia técnica.',
+      contactUs: 'Contáctenos',
+      ourSolutions: 'Nuestras Soluciones',
+      partnershipsTitle: 'Nuestras Alianzas Estratégicas',
+      partnershipsDesc: 'Representamos con orgullo a fabricantes internacionalmente reconocidos, ofreciendo soluciones industriales de alto rendimiento en todo el Caribe.',
+      whatWeDoTitle: 'Lo Que Hacemos',
+      whatWeDoDesc: 'Proporcionamos soluciones industriales integradas adaptadas a las necesidades operativas.',
+      whyTitle: 'Por Qué S&S Distribution',
+      industriesTitle: 'Industrias que Servimos',
+      regionalTitle: 'Presencia Regional',
+      regionalDesc: 'Operamos en todo el Caribe holandés, garantizando proximidad y capacidad de respuesta.',
+      ctaTitle: 'Trabajemos Juntos',
+      ctaDesc: 'Contáctenos para discutir los requisitos de su proyecto, desafíos operativos o necesidades de productos. Nuestro equipo está listo para apoyar sus operaciones.',
+      ctaButton: 'Ponerse en Contacto',
       viewProducts: 'Ver Productos',
-      contactUs: 'Contactar',
       advantagesTitle: 'Nuestras Ventajas',
+      partners: [
+        { name: 'Chemical Global', description: 'Proveedor de químicos especializados de alto rendimiento para aplicaciones industriales.', items: ['Soluciones de limpieza y desengrase industrial', 'Productos de sanitización y desinfección', 'Químicos de mantenimiento y operación'] },
+        { name: 'ZymeFlow', description: 'Proveedor de tecnologías avanzadas de limpieza química para sistemas industriales.', items: ['Intercambiadores de calor', 'Tuberías', 'Equipos de proceso'] },
+        { name: 'Hydranautics', description: 'Líder global en tecnología de membranas para tratamiento de agua y aguas residuales.', items: ['Ósmosis Inversa (RO)', 'Nanofiltración (NF)', 'Ultrafiltración (UF)'] },
+      ],
+      services: [
+        { icon: '💧', text: 'Sistemas de tratamiento de agua y tecnologías de membranas' },
+        { icon: '🧪', text: 'Soluciones de limpieza química industrial' },
+        { icon: '🏭', text: 'Programas de sanitización para entornos industriales y alimentarios' },
+        { icon: '⚙️', text: 'Suministro de químicos de mantenimiento y especialidad' },
+      ],
+      reasons: [
+        { icon: '🌐', title: 'Representación Oficial', desc: 'Representación oficial de fabricantes internacionales líderes' },
+        { icon: '🔬', title: 'Experiencia Técnica', desc: 'Sólido conocimiento técnico de procesos industriales' },
+        { icon: '⚡', title: 'Soporte Local', desc: 'Respuesta rápida y soporte local en el Caribe' },
+        { icon: '📦', title: 'Suministro Confiable', desc: 'Cadena de suministro confiable y disponibilidad de productos' },
+      ],
+      industries: [
+        { icon: '🛢️', name: 'Petróleo y Gas' },
+        { icon: '💧', name: 'Servicios Públicos y Tratamiento de Agua' },
+        { icon: '🍽️', name: 'Alimentos y Bebidas' },
+        { icon: '🏭', name: 'Plantas Industriales y Manufactura' },
+      ],
+      regions: ['Curaçao', 'Aruba', 'Bonaire'],
       advantages: [
         {
           title: 'Productos Confiables',
@@ -330,7 +408,7 @@ export const translations = {
           products: 'Equipos y Químicos Industriales'
         },
         {
-          name: 'Membranes',
+          name: 'Hydranautics',
           description: 'Tecnología de membranas y soluciones de filtración',
           products: 'Productos y Equipos de Filtración'
         }
@@ -386,9 +464,48 @@ export const translations = {
     home: {
       title: 'S&S Distribution',
       subtitle: 'Industriële Chemische Producten en Apparatuur',
-      viewProducts: 'Bekijk Producten',
+      heroTitle: 'Industriële Oplossingen & Chemische Levering in het Caribisch Gebied',
+      heroDesc: 'Officiële vertegenwoordigers van toonaangevende wereldwijde fabrikanten in waterbehandeling, industriële reiniging en speciale chemicaliën.',
+      heroRegion: 'Wij bedienen Curaçao, Aruba en Bonaire met betrouwbare levering en technische expertise.',
       contactUs: 'Neem Contact Op',
+      ourSolutions: 'Onze Oplossingen',
+      partnershipsTitle: 'Onze Strategische Partnerschappen',
+      partnershipsDesc: 'Wij vertegenwoordigen internationaal erkende fabrikanten en leveren hoogwaardige industriële oplossingen in het Caribisch gebied.',
+      whatWeDoTitle: 'Wat Wij Doen',
+      whatWeDoDesc: 'Wij bieden geïntegreerde industriële oplossingen op maat van operationele behoeften.',
+      whyTitle: 'Waarom S&S Distribution',
+      industriesTitle: 'Industrieën die Wij Bedienen',
+      regionalTitle: 'Regionale Aanwezigheid',
+      regionalDesc: 'Wij opereren in het gehele Nederlandse Caribisch gebied en zorgen voor nabijheid en reactievermogen.',
+      ctaTitle: 'Laten We Samenwerken',
+      ctaDesc: 'Neem contact met ons op om uw projectvereisten, operationele uitdagingen of productbehoeften te bespreken.',
+      ctaButton: 'Neem Contact Op',
+      viewProducts: 'Bekijk Producten',
       advantagesTitle: 'Onze Voordelen',
+      partners: [
+        { name: 'Chemical Global', description: 'Leverancier van hoogwaardige speciale chemicaliën voor industriële toepassingen.', items: ['Industriële reinigings- en ontvettingsoplossingen', 'Sanitatie- en desinfectieproducten', 'Onderhouds- en operationele chemicaliën'] },
+        { name: 'ZymeFlow', description: 'Leverancier van geavanceerde chemische reinigingstechnologieën voor industriële systemen.', items: ['Warmtewisselaars', 'Pijpleidingen', 'Procesapparatuur'] },
+        { name: 'Hydranautics', description: 'Wereldleider in membraantechnologie voor water- en afvalwaterbehandeling.', items: ['Omgekeerde osmose (RO)', 'Nanofiltratie (NF)', 'Ultrafiltratie (UF)'] },
+      ],
+      services: [
+        { icon: '💧', text: 'Waterbehandelingssystemen en membraantechnologieën' },
+        { icon: '🧪', text: 'Industriële chemische reinigingsoplossingen' },
+        { icon: '🏭', text: 'Sanitatieprogramma\'s voor industriële en voedselomgevingen' },
+        { icon: '⚙️', text: 'Levering van onderhouds- en speciale chemicaliën' },
+      ],
+      reasons: [
+        { icon: '🌐', title: 'Officiële Vertegenwoordiging', desc: 'Officiële vertegenwoordiging van toonaangevende internationale fabrikanten' },
+        { icon: '🔬', title: 'Technische Expertise', desc: 'Sterke technische kennis van industriële processen' },
+        { icon: '⚡', title: 'Lokale Ondersteuning', desc: 'Snelle respons en lokale ondersteuning in het Caribisch gebied' },
+        { icon: '📦', title: 'Betrouwbare Levering', desc: 'Betrouwbare toeleveringsketen en productbeschikbaarheid' },
+      ],
+      industries: [
+        { icon: '🛢️', name: 'Olie & Gas' },
+        { icon: '💧', name: 'Nutsbedrijven & Waterbehandeling' },
+        { icon: '🍽️', name: 'Voeding & Dranken' },
+        { icon: '🏭', name: 'Industriële Fabrieken & Productie' },
+      ],
+      regions: ['Curaçao', 'Aruba', 'Bonaire'],
       advantages: [
         {
           title: 'Betrouwbare Producten',
@@ -514,8 +631,8 @@ export const translations = {
           products: 'Industriële Apparatuur & Chemicaliën'
         },
         {
-          name: 'Membranes',
-          description: 'Membraantechnologie en filtratieoplossingen',
+          name: 'Hydranautics',
+          description: 'Wereldleider in membraantechnologie voor water- en afvalwaterbehandeling, inclusief RO, NF en UF systemen.',
           products: 'Filtratieproducten & Apparatuur'
         }
       ],
@@ -570,9 +687,48 @@ export const translations = {
     home: {
       title: 'S&S Distribution',
       subtitle: 'Produktonan Kímiko Industrial i Ekipo',
-      viewProducts: 'Mira Produktonan',
+      heroTitle: 'Solushonnan Industrial i Suministro Kímiko den Karibe',
+      heroDesc: 'Representantenan ofisial di fabrikante lider mundial den tratamento di awa, limpiesa industrial i kímiko spesializá.',
+      heroRegion: 'Sirbiendo Kòrsou, Aruba i Boneiru ku suministro konfiabel i ekspertisia tékniko.',
       contactUs: 'Tuma Kontakto',
+      ourSolutions: 'Nos Solushonnan',
+      partnershipsTitle: 'Nos Aliansanan Estratégiko',
+      partnershipsDesc: 'Nos ta representá ku orguyo fabrikante internashonalmente rekonosí, ofresiendo solushonnan industrial di haltu rendimentu den tur Karibe.',
+      whatWeDoTitle: 'Kiko Nos Ta Hasi',
+      whatWeDoDesc: 'Nos ta provee solushonnan industrial integrado adaptá na nesesidatnan operashonal.',
+      whyTitle: 'Pakiko S&S Distribution',
+      industriesTitle: 'Industrianan ku Nos Ta Sirbi',
+      regionalTitle: 'Presencia Regional',
+      regionalDesc: 'Nos ta operá den tur Karibe Hulandes, garantisando serkania i kapasidad di respuesta.',
+      ctaTitle: 'Laga Nos Traha Huntu',
+      ctaDesc: 'Tuma kontakto ku nos pa diskutí rekerimentonan di bo proyekto, desafionan operashonal òf nesesidatnan di produkto.',
+      ctaButton: 'Tuma Kontakto',
+      viewProducts: 'Mira Produktonan',
       advantagesTitle: 'Nos Bentahanan',
+      partners: [
+        { name: 'Chemical Global', description: 'Proveedor di kímiko spesializá di haltu rendimentu pa aplikashonnan industrial.', items: ['Solushonnan di limpiesa i desengrase industrial', 'Produktonan di sanitisashon i desinfekshon', 'Kímiko di mantenementu i operashon'] },
+        { name: 'ZymeFlow', description: 'Proveedor di teknolohianan avansá di limpiesa kímiko pa sistemanan industrial.', items: ['Intercambiadornan di kalor', 'Tuberanan', 'Ekipo di proseso'] },
+        { name: 'Hydranautics', description: 'Lider mundial den teknologia di membrana pa tratamento di awa i awa residual.', items: ['Ósmosis Inverso (RO)', 'Nanofiltrasion (NF)', 'Ultrafiltrasion (UF)'] },
+      ],
+      services: [
+        { icon: '💧', text: 'Sistemanan di tratamento di awa i teknolohianan di membrana' },
+        { icon: '🧪', text: 'Solushonnan di limpiesa kímiko industrial' },
+        { icon: '🏭', text: 'Programanan di sanitisashon pa entornonan industrial i alimentario' },
+        { icon: '⚙️', text: 'Suministro di kímiko di mantenementu i espesialidá' },
+      ],
+      reasons: [
+        { icon: '🌐', title: 'Representashon Ofisial', desc: 'Representashon ofisial di fabrikante internashonal lider' },
+        { icon: '🔬', title: 'Ekspertisia Tékniko', desc: 'Konosementu tékniko sólido di prosonan industrial' },
+        { icon: '⚡', title: 'Soporte Lokal', desc: 'Respuesta rápido i soporte lokal den Karibe' },
+        { icon: '📦', title: 'Suministro Konfiabel', desc: 'Kadena di suministro konfiabel i disponibilidat di produkto' },
+      ],
+      industries: [
+        { icon: '🛢️', name: 'Petroleo i Gas' },
+        { icon: '💧', name: 'Servisio Públiko i Tratamento di Awa' },
+        { icon: '🍽️', name: 'Kuminda i Bebida' },
+        { icon: '🏭', name: 'Plantanan Industrial i Fabrikashon' },
+      ],
+      regions: ['Kòrsou', 'Aruba', 'Boneiru'],
       advantages: [
         {
           title: 'Produktonan Konfiabel',
@@ -698,8 +854,8 @@ export const translations = {
           products: 'Ekipo i Kímiko Industrial'
         },
         {
-          name: 'Membranes',
-          description: 'Teknologia di membrana i solushonnan di filtrashon',
+          name: 'Hydranautics',
+          description: 'Lider mundial den teknologia di membrana pa tratamento di awa, inkluiendo sistemanan RO, NF i UF.',
           products: 'Produktonan i Ekipo di Filtrashon'
         }
       ],
@@ -783,4 +939,5 @@ export function useLanguage() {
   }
   return context
 }
+
 
