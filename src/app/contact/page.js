@@ -4,11 +4,6 @@ import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
 import emailjs from '@emailjs/browser'
 
-// EmailJS config - create free account at emailjs.com and replace these values
-const EMAILJS_SERVICE_ID = 'service_bov2uaq'
-const EMAILJS_TEMPLATE_ID = 'template_waat5ne'
-const EMAILJS_PUBLIC_KEY = 'BqEhgbInhDBpOf8Ye'
-
 export default function Contact() {
   const { t } = useLanguage()
   const formRef = useRef()
@@ -18,7 +13,12 @@ export default function Contact() {
     e.preventDefault()
     setStatus('sending')
     try {
-      await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formRef.current, EMAILJS_PUBLIC_KEY)
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
       setStatus('success')
       formRef.current.reset()
     } catch {
@@ -125,10 +125,10 @@ export default function Contact() {
               </div>
 
               {status === 'success' && (
-                <p className="text-green-400 text-sm">✓ Message sent successfully!</p>
+                <p className="text-green-400 text-sm">{t.contact.successMessage}</p>
               )}
               {status === 'error' && (
-                <p className="text-red-400 text-sm">✗ Something went wrong. Please try again.</p>
+                <p className="text-red-400 text-sm">{t.contact.errorMessage}</p>
               )}
               
               <button
@@ -136,7 +136,7 @@ export default function Contact() {
                 disabled={status === 'sending'}
                 className="w-full px-6 py-3 bg-primary text-dark font-bold rounded-lg hover:opacity-90 transition-all disabled:opacity-60"
               >
-                {status === 'sending' ? 'Sending...' : t.contact.submitButton}
+                {status === 'sending' ? t.contact.sending : t.contact.submitButton}
               </button>
             </form>
           </motion.div>

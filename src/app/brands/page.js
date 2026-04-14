@@ -25,7 +25,7 @@ export default function Brands() {
           transition={{ delay: 0.2 }}
           className="flex justify-center"
         >
-          <div className="w-full rounded-2xl p-6" style={{ maxWidth: '900px', backgroundColor: '#1a1a2e' }}>
+          <div className="w-full rounded-2xl p-6" style={{ maxWidth: '900px', backgroundColor: 'var(--bg-secondary)' }}>
             <img
               src="/Clientes.png"
               alt="Nuestros Clientes"

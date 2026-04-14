@@ -18,8 +18,7 @@ export default function Home() {
     <main className="min-h-screen pt-20">
 
       {/* Hero */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background image */}
+      <section className="dark-overlay relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src="/images/Storage-edited-HDR_Snapseed-web-web.jpg" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(10,10,15,0.85) 0%, rgba(26,26,46,0.80) 100%)' }} />
@@ -29,7 +28,7 @@ export default function Home() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex justify-center mb-8">
             <img src={theme === 'light' ? '/ss_distribution_final.svg' : '/ss_distribution.svg'} alt="S&S Distribution" style={{ height: '160px', width: 'auto', maxWidth: '90vw' }} />
           </motion.div>
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#ffffff' }}>
             {t.home.heroTitle}
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="text-base md:text-lg text-gray-300 mb-3 max-w-3xl mx-auto">
@@ -42,22 +41,13 @@ export default function Home() {
             {t.home.heroRegion}
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }} className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/products" className="px-8 py-4 bg-primary font-bold rounded-lg hover:opacity-90 transition-all" style={{ color: 'var(--bg-primary)' }}>
+            <Link href="/products" className="px-8 py-4 bg-primary font-bold rounded-lg hover:opacity-90 transition-all" style={{ color: '#0a0a0f' }}>
               {t.home.ourSolutions}
             </Link>
-            <Link href="/contact" className="px-8 py-4 glass-effect border-2 border-primary rounded-lg hover:bg-primary/10 transition-all" style={{ color: 'var(--text-primary)' }}>
+            <Link href="/contact" className="px-8 py-4 glass-effect border-2 border-primary rounded-lg hover:bg-primary/10 transition-all" style={{ color: '#ffffff' }}>
               {t.home.contactUs}
             </Link>
           </motion.div>
-        </div>
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(20)].map((_, i) => (
-            <motion.div key={i} className="absolute w-2 h-2 bg-primary rounded-full"
-              initial={{ x: Math.random() * 1920, y: Math.random() * 1080 }}
-              animate={{ y: [null, Math.random() * 1080], opacity: [0, 1, 0] }}
-              transition={{ duration: Math.random() * 3 + 2, repeat: Infinity, delay: Math.random() * 2 }}
-            />
-          ))}
         </div>
       </section>
 
@@ -130,9 +120,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why S&S */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
+      {/* Why S&S - with image background */}
+      <section className="dark-overlay relative py-20 px-4 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/bullenbaai.jpg" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0" style={{ background: 'rgba(10,10,15,0.82)' }} />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto">
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-4xl font-bold text-center mb-16 gradient-text">
             {t.home.whyTitle}
           </motion.h2>
@@ -169,7 +163,7 @@ export default function Home() {
           </div>
           <div className="text-center">
             <Link href="/industries" className="inline-block px-6 py-3 glass-effect border border-primary rounded-lg hover:bg-primary/10 transition-all text-sm font-semibold" style={{ color: 'var(--primary)' }}>
-              View All Industries →
+              {t.home.viewAllIndustries}
             </Link>
           </div>
         </div>
@@ -198,13 +192,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 px-4">
-        <div className="max-w-3xl mx-auto text-center">
+      {/* CTA with image background */}
+      <section className="dark-overlay relative py-20 px-4 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/oil-tankers-PDVSA.jpg" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0" style={{ background: 'rgba(10,10,15,0.80)' }} />
+        </div>
+        <div className="relative z-10 max-w-3xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glass-effect p-12 rounded-2xl border border-primary/30">
             <h2 className="text-4xl font-bold mb-6 gradient-text">{t.home.ctaTitle}</h2>
             <p className="text-gray-400 mb-8">{t.home.ctaDesc}</p>
-            <Link href="/contact" className="inline-block px-10 py-4 bg-primary font-bold rounded-lg hover:opacity-90 transition-all text-lg" style={{ color: 'var(--bg-primary)' }}>
+            <Link href="/contact" className="inline-block px-10 py-4 bg-primary font-bold rounded-lg hover:opacity-90 transition-all text-lg" style={{ color: '#0a0a0f' }}>
               {t.home.ctaButton}
             </Link>
           </motion.div>

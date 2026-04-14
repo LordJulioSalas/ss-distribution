@@ -1,11 +1,12 @@
 'use client'
 import { motion } from 'framer-motion'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 const WHATSAPP_NUMBER = '59995283385'
-const WHATSAPP_MESSAGE = 'Hello! I would like more information about S&S Distribution products.'
 
 export default function WhatsAppButton() {
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
+  const { t } = useLanguage()
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.ui.whatsappMessage)}`
 
   return (
     <motion.a

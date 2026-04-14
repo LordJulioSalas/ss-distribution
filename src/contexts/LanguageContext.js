@@ -38,9 +38,10 @@ export const translations = {
       ctaDesc: 'Contact us to discuss your operational needs and identify the right solution for your business.',
       ctaButton: 'Get in Touch',
       viewProducts: 'View Products',
+      viewAllIndustries: 'View All Industries →',
       advantagesTitle: 'Our Advantages',
       partners: [
-        { name: 'Chemical Global', url: 'https://chemicalsglobal.com/', description: 'Supplier of high-performance specialty chemicals for industrial applications, including:', items: ['Industrial cleaning and degreasing solutions', 'Sanitation and disinfection products', 'Maintenance and operational chemicals'] },
+        { name: 'Chemicals Global', url: 'https://chemicalsglobal.com/', description: 'Supplier of high-performance specialty chemicals for industrial applications, including:', items: ['Industrial cleaning and degreasing solutions', 'Sanitation and disinfection products', 'Maintenance and operational chemicals'] },
         { name: 'ZymeFlow', url: 'https://www.zymeflow.com/', description: 'Provider of advanced chemical cleaning technologies for industrial systems, including:', items: ['Heat exchangers', 'Pipelines', 'Process equipment', 'Supporting efficient, safe, and environmentally responsible maintenance operations.'] },
         { name: 'Hydranautics (Nitto Group)', url: 'https://membranes.com/solutions/products/', description: 'Global leader in membrane technology for water and wastewater treatment, including:', items: ['Reverse Osmosis (RO)', 'Nanofiltration (NF)', 'Ultrafiltration (UF)', 'Serving desalination, industrial processes, and water reuse applications.'] },
       ],
@@ -218,7 +219,10 @@ export const translations = {
       emailPlaceholder: 'your@email.com',
       messageLabel: 'Message',
       messagePlaceholder: 'How can we help you?',
-      submitButton: 'Send Message'
+      submitButton: 'Send Message',
+      sending: 'Sending...',
+      successMessage: '✓ Message sent successfully!',
+      errorMessage: '✗ Something went wrong. Please try again.'
     },
     // Footer
     footer: {
@@ -231,6 +235,12 @@ export const translations = {
       schedule: 'Monday - Friday',
       hours: '8:00 AM - 5:00 PM',
       rights: 'All rights reserved.'
+    },
+    // Common UI
+    ui: {
+      lightMode: 'Light Mode',
+      darkMode: 'Dark Mode',
+      whatsappMessage: 'Hello! I would like more information about S&S Distribution products.'
     }
   },
   es: {
@@ -267,9 +277,10 @@ export const translations = {
       ctaDesc: 'Contáctenos para discutir sus necesidades operativas e identificar la solución adecuada para su negocio.',
       ctaButton: 'Ponerse en Contacto',
       viewProducts: 'Ver Productos',
+      viewAllIndustries: 'Ver Todas las Industrias →',
       advantagesTitle: 'Nuestras Ventajas',
       partners: [
-        { name: 'Chemical Global', url: 'https://chemicalsglobal.com/', description: 'Proveedor de químicos especializados de alto rendimiento para aplicaciones industriales.', items: ['Soluciones de limpieza y desengrase industrial', 'Productos de sanitización y desinfección', 'Químicos de mantenimiento y operación'] },
+        { name: 'Chemicals Global', url: 'https://chemicalsglobal.com/', description: 'Proveedor de químicos especializados de alto rendimiento para aplicaciones industriales.', items: ['Soluciones de limpieza y desengrase industrial', 'Productos de sanitización y desinfección', 'Químicos de mantenimiento y operación'] },
         { name: 'ZymeFlow', url: 'https://www.zymeflow.com/', description: 'Proveedor de tecnologías avanzadas de limpieza química para sistemas industriales.', items: ['Intercambiadores de calor', 'Tuberías', 'Equipos de proceso'] },
         { name: 'Hydranautics', url: 'https://membranes.com/solutions/products/', description: 'Líder global en tecnología de membranas para tratamiento de agua y aguas residuales.', items: ['Ósmosis Inversa (RO)', 'Nanofiltración (NF)', 'Ultrafiltración (UF)'] },
       ],
@@ -447,7 +458,10 @@ export const translations = {
       emailPlaceholder: 'tu@email.com',
       messageLabel: 'Mensaje',
       messagePlaceholder: '¿En qué podemos ayudarte?',
-      submitButton: 'Enviar Mensaje'
+      submitButton: 'Enviar Mensaje',
+      sending: 'Enviando...',
+      successMessage: '✓ ¡Mensaje enviado exitosamente!',
+      errorMessage: '✗ Algo salió mal. Inténtalo de nuevo.'
     },
     // Footer
     footer: {
@@ -460,6 +474,11 @@ export const translations = {
       schedule: 'Lunes - Viernes',
       hours: '8:00 AM - 5:00 PM',
       rights: 'Todos los derechos reservados.'
+    },
+    ui: {
+      lightMode: 'Modo Claro',
+      darkMode: 'Modo Oscuro',
+      whatsappMessage: '¡Hola! Me gustaría más información sobre los productos de S&S Distribution.'
     }
   },
   nl: {
@@ -477,25 +496,29 @@ export const translations = {
       title: 'S&S Distribution',
       subtitle: 'Industriële Chemische Producten en Apparatuur',
       heroTitle: 'Industriële Oplossingen & Chemische Levering in het Caribisch Gebied',
-      heroDesc: 'Officiële vertegenwoordigers van toonaangevende wereldwijde fabrikanten in waterbehandeling, industriële reiniging en speciale chemicaliën.',
-      heroRegion: 'Wij bedienen Curaçao, Aruba en Bonaire met betrouwbare levering en technische expertise.',
+      heroDesc: 'S&S Distribution levert hoogwaardige chemische oplossingen, industriële reinigingstechnologieën en speciale producten ontworpen om efficiënte, betrouwbare en veilige operaties in meerdere industrieën te ondersteunen.',
+      heroDesc2: 'Via strategische partnerschappen met wereldwijde fabrikanten zoals Chemical Global, ZymeFlow en Hydranautics brengen wij bewezen technologieën en geavanceerde oplossingen rechtstreeks naar de Caribische markt.',
+      heroRegion: 'Met een sterke regionale aanwezigheid bieden wij betrouwbare distributie en technische ondersteuning in Curaçao, Aruba en Bonaire.',
       contactUs: 'Neem Contact Op',
       ourSolutions: 'Onze Oplossingen',
       partnershipsTitle: 'Onze Strategische Partnerschappen',
       partnershipsDesc: 'Wij vertegenwoordigen internationaal erkende fabrikanten en leveren hoogwaardige industriële oplossingen in het Caribisch gebied.',
+      partnershipsFooter: 'Via deze partnerschappen bieden wij directe toegang tot bewezen technologieën, waardoor kwaliteit, betrouwbaarheid en prestaties voor industriële operaties in de regio worden gegarandeerd.',
       whatWeDoTitle: 'Wat Wij Doen',
       whatWeDoDesc: 'Wij bieden geïntegreerde industriële oplossingen op maat van operationele behoeften.',
       whyTitle: 'Waarom S&S Distribution',
       industriesTitle: 'Industrieën die Wij Bedienen',
+      industriesDesc: 'Onze oplossingen ondersteunen een breed scala aan industrieën in Curaçao, Aruba en Bonaire, en pakken kritieke operationele en onderhoudsuitdagingen aan.',
       regionalTitle: 'Regionale Aanwezigheid',
       regionalDesc: 'Wij opereren in het gehele Nederlandse Caribisch gebied en zorgen voor nabijheid en reactievermogen.',
       ctaTitle: 'Laten We Samenwerken',
       ctaDesc: 'Neem contact met ons op om uw projectvereisten, operationele uitdagingen of productbehoeften te bespreken.',
       ctaButton: 'Neem Contact Op',
       viewProducts: 'Bekijk Producten',
+      viewAllIndustries: 'Bekijk Alle Industrieën →',
       advantagesTitle: 'Onze Voordelen',
       partners: [
-        { name: 'Chemical Global', url: 'https://chemicalsglobal.com/', description: 'Leverancier van hoogwaardige speciale chemicaliën voor industriële toepassingen.', items: ['Industriële reinigings- en ontvettingsoplossingen', 'Sanitatie- en desinfectieproducten', 'Onderhouds- en operationele chemicaliën'] },
+        { name: 'Chemicals Global', url: 'https://chemicalsglobal.com/', description: 'Leverancier van hoogwaardige speciale chemicaliën voor industriële toepassingen.', items: ['Industriële reinigings- en ontvettingsoplossingen', 'Sanitatie- en desinfectieproducten', 'Onderhouds- en operationele chemicaliën'] },
         { name: 'ZymeFlow', url: 'https://www.zymeflow.com/', description: 'Leverancier van geavanceerde chemische reinigingstechnologieën voor industriële systemen.', items: ['Warmtewisselaars', 'Pijpleidingen', 'Procesapparatuur'] },
         { name: 'Hydranautics', url: 'https://membranes.com/solutions/products/', description: 'Wereldleider in membraantechnologie voor water- en afvalwaterbehandeling.', items: ['Omgekeerde osmose (RO)', 'Nanofiltratie (NF)', 'Ultrafiltratie (UF)'] },
       ],
@@ -673,7 +696,10 @@ export const translations = {
       emailPlaceholder: 'uw@email.com',
       messageLabel: 'Bericht',
       messagePlaceholder: 'Hoe kunnen we u helpen?',
-      submitButton: 'Verstuur Bericht'
+      submitButton: 'Verstuur Bericht',
+      sending: 'Verzenden...',
+      successMessage: '✓ Bericht succesvol verzonden!',
+      errorMessage: '✗ Er ging iets mis. Probeer het opnieuw.'
     },
     // Footer
     footer: {
@@ -686,6 +712,11 @@ export const translations = {
       schedule: 'Maandag - Vrijdag',
       hours: '8:00 - 17:00',
       rights: 'Alle rechten voorbehouden.'
+    },
+    ui: {
+      lightMode: 'Lichte Modus',
+      darkMode: 'Donkere Modus',
+      whatsappMessage: 'Hallo! Ik wil graag meer informatie over de producten van S&S Distribution.'
     }
   },
   pap: {
@@ -703,25 +734,29 @@ export const translations = {
       title: 'S&S Distribution',
       subtitle: 'Produktonan Kímiko Industrial i Ekipo',
       heroTitle: 'Solushonnan Industrial i Suministro Kímiko den Karibe',
-      heroDesc: 'Representantenan ofisial di fabrikante lider mundial den tratamento di awa, limpiesa industrial i kímiko spesializá.',
-      heroRegion: 'Sirbiendo Kòrsou, Aruba i Boneiru ku suministro konfiabel i ekspertisia tékniko.',
+      heroDesc: 'S&S Distribution ta entregá solushonnan kímiko di haltu rendimentu, teknolohianan di limpiesa industrial i produktonan spesializá diseñá pa soportá operashonnan efisiente, konfiabel i sigur den múltiple industrianan.',
+      heroDesc2: 'Via aliansanan estratégiko ku fabrikante global manera Chemical Global, ZymeFlow i Hydranautics, nos ta trese teknolohianan probá i solushonnan avansá direktamente na merkado karibeño.',
+      heroRegion: 'Ku un presencia regional fuerte, nos ta provee distribushon konfiabel i soporte tékniko den Kòrsou, Aruba i Boneiru.',
       contactUs: 'Tuma Kontakto',
       ourSolutions: 'Nos Solushonnan',
       partnershipsTitle: 'Nos Aliansanan Estratégiko',
       partnershipsDesc: 'Nos ta representá ku orguyo fabrikante internashonalmente rekonosí, ofresiendo solushonnan industrial di haltu rendimentu den tur Karibe.',
+      partnershipsFooter: 'Via e aliansanan aki, nos ta provee akseso direkto na teknolohianan probá, garantisando kalidat, konfiabilidat i rendimentu pa operashonnan industrial den e region.',
       whatWeDoTitle: 'Kiko Nos Ta Hasi',
       whatWeDoDesc: 'Nos ta provee solushonnan industrial integrado adaptá na nesesidatnan operashonal.',
       whyTitle: 'Pakiko S&S Distribution',
       industriesTitle: 'Industrianan ku Nos Ta Sirbi',
+      industriesDesc: 'Nos solushonnan ta soportá un amplio rango di industrianan den Kòrsou, Aruba i Boneiru, atendiendo desafionan operashonal i di mantenementu krítiko.',
       regionalTitle: 'Presencia Regional',
       regionalDesc: 'Nos ta operá den tur Karibe Hulandes, garantisando serkania i kapasidad di respuesta.',
       ctaTitle: 'Laga Nos Traha Huntu',
       ctaDesc: 'Tuma kontakto ku nos pa diskutí rekerimentonan di bo proyekto, desafionan operashonal òf nesesidatnan di produkto.',
       ctaButton: 'Tuma Kontakto',
       viewProducts: 'Mira Produktonan',
+      viewAllIndustries: 'Mira Tur Industrianan →',
       advantagesTitle: 'Nos Bentahanan',
       partners: [
-        { name: 'Chemical Global', url: 'https://chemicalsglobal.com/', description: 'Proveedor di kímiko spesializá di haltu rendimentu pa aplikashonnan industrial.', items: ['Solushonnan di limpiesa i desengrase industrial', 'Produktonan di sanitisashon i desinfekshon', 'Kímiko di mantenementu i operashon'] },
+        { name: 'Chemicals Global', url: 'https://chemicalsglobal.com/', description: 'Proveedor di kímiko spesializá di haltu rendimentu pa aplikashonnan industrial.', items: ['Solushonnan di limpiesa i desengrase industrial', 'Produktonan di sanitisashon i desinfekshon', 'Kímiko di mantenementu i operashon'] },
         { name: 'ZymeFlow', url: 'https://www.zymeflow.com/', description: 'Proveedor di teknolohianan avansá di limpiesa kímiko pa sistemanan industrial.', items: ['Intercambiadornan di kalor', 'Tuberanan', 'Ekipo di proseso'] },
         { name: 'Hydranautics', url: 'https://membranes.com/solutions/products/', description: 'Lider mundial den teknologia di membrana pa tratamento di awa i awa residual.', items: ['Ósmosis Inverso (RO)', 'Nanofiltrasion (NF)', 'Ultrafiltrasion (UF)'] },
       ],
@@ -899,7 +934,10 @@ export const translations = {
       emailPlaceholder: 'bo@email.com',
       messageLabel: 'Mensahe',
       messagePlaceholder: 'Con nos por yuda bo?',
-      submitButton: 'Manda Mensahe'
+      submitButton: 'Manda Mensahe',
+      sending: 'Mandando...',
+      successMessage: '✓ Mensahe mandá ku éksito!',
+      errorMessage: '✗ Algo a bai robes. Purba atrobe.'
     },
     // Footer
     footer: {
@@ -912,6 +950,11 @@ export const translations = {
       schedule: 'Dialuna - Dibierne',
       hours: '8:00 AM - 5:00 PM',
       rights: 'Tur derecho reservá.'
+    },
+    ui: {
+      lightMode: 'Modus Klaro',
+      darkMode: 'Modus Skur',
+      whatsappMessage: 'Bon dia! Mi lo ke mas informashon tokante produktonan di S&S Distribution.'
     }
   }
 }

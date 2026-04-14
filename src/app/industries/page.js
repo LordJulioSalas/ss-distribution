@@ -9,11 +9,11 @@ export default function Industries() {
     <main className="min-h-screen pt-32 px-4 pb-20">
       <div className="max-w-7xl mx-auto">
         {/* Hero banner */}
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="relative rounded-2xl overflow-hidden mb-16 h-64">
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="dark-overlay relative rounded-2xl overflow-hidden mb-16 h-64">
           <img src="/images/format_dji0015edit_5cde377a998c1.webp" alt="Industrial operations" className="w-full h-full object-cover" />
           <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ background: 'rgba(10,10,15,0.65)' }}>
             <h1 className="text-5xl font-bold gradient-text mb-3">{t.home.industriesTitle}</h1>
-            <p className="text-gray-300 text-center max-w-xl px-4">Our solutions support a wide range of industries across Curaçao, Aruba, and Bonaire.</p>
+            <p className="text-gray-300 text-center max-w-xl px-4">{t.home.industriesDesc}</p>
           </div>
         </motion.div>
 

@@ -107,6 +107,52 @@ body::before {
   color: var(--text-primary);
 }
 
+/* ============================================
+   DARK OVERLAY SECTIONS
+   Force light text in sections that have dark
+   image backgrounds regardless of theme.
+   ============================================ */
+.dark-overlay,
+.dark-overlay .glass-effect {
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+}
+
+.dark-overlay h1,
+.dark-overlay h2,
+.dark-overlay h3,
+.dark-overlay h4 {
+  color: #ffffff !important;
+}
+
+.dark-overlay .text-gray-300 {
+  color: #d1d5db !important;
+}
+
+.dark-overlay .text-gray-400 {
+  color: #9ca3af !important;
+}
+
+.dark-overlay .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+.dark-overlay .glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.dark-overlay .gradient-text {
+  background: linear-gradient(90deg, #5ba3cf 0%, #4a90b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================ */
+
 /* Background colors */
 [data-theme="light"] .bg-dark {
   background-color: var(--bg-secondary);
@@ -138,17 +184,25 @@ body::before {
   border-color: var(--primary);
 }
 
+.dark-overlay .text-primary {
+  color: #5ba3cf !important;
+}
+
+.dark-overlay .border-primary {
+  border-color: #5ba3cf !important;
+}
+
 /* Hover effects */
 [data-theme="light"] .hover\:bg-primary\/10:hover {
-  background-color: rgba(255, 107, 53, 0.1);
+  background-color: rgba(74, 144, 184, 0.1);
 }
 
 [data-theme="light"] .bg-primary\/10 {
-  background-color: rgba(255, 107, 53, 0.1);
+  background-color: rgba(74, 144, 184, 0.1);
 }
 
 [data-theme="light"] .bg-primary\/20 {
-  background-color: rgba(255, 107, 53, 0.2);
+  background-color: rgba(74, 144, 184, 0.2);
 }
 
 /* Text color for buttons on primary background */
@@ -167,11 +221,11 @@ body::before {
 
 [data-theme="light"] .glass-effect.border-2.border-primary {
   color: var(--text-primary);
-  background: rgba(14, 165, 233, 0.05);
+  background: rgba(74, 144, 184, 0.05);
 }
 
 [data-theme="light"] .glass-effect.border-2.border-primary:hover {
-  background: rgba(14, 165, 233, 0.15);
+  background: rgba(74, 144, 184, 0.15);
 }
 
 /* Ensure text visibility on buttons */
@@ -181,5 +235,18 @@ body::before {
 
 [data-theme="dark"] a.glass-effect {
   color: var(--text-primary);
+}
+
+/* Contact form inputs in light mode */
+[data-theme="light"] input.bg-dark\/50,
+[data-theme="light"] textarea.bg-dark\/50 {
+  background-color: rgba(241, 245, 249, 0.8);
+  color: var(--text-primary);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] input.bg-dark\/50::placeholder,
+[data-theme="light"] textarea.bg-dark\/50::placeholder {
+  color: var(--text-tertiary);
 }
 

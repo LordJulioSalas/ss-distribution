@@ -1,9 +1,11 @@
 'use client'
 import { useTheme } from '@/contexts/ThemeContext'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { motion } from 'framer-motion'
 
 export default function ThemeToggle({ mobile = false }) {
   const { theme, toggleTheme } = useTheme()
+  const { t } = useLanguage()
 
   if (mobile) {
     return (
@@ -24,7 +26,7 @@ export default function ThemeToggle({ mobile = false }) {
             </svg>
           )}
         </motion.div>
-        <span className="text-sm font-medium">{theme === 'dark' ? 'Light Mode' : 'Dark Mode'}</span>
+        <span className="text-sm font-medium">{theme === 'dark' ? t.ui.lightMode : t.ui.darkMode}</span>
       </button>
     )
   }
