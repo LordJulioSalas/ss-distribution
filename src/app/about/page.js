@@ -13,9 +13,14 @@ export default function About() {
         {/* Title + Intro */}
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
           <h1 className="text-5xl font-bold mb-8 gradient-text">{a.title}</h1>
-          <div className="glass-effect p-8 rounded-xl space-y-4 text-gray-300">
-            <p className="text-lg font-semibold" style={{ color: 'var(--text-primary)' }}>{a.intro}</p>
-            <p className="text-base">{a.introDesc}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-0">
+            <div className="glass-effect p-8 rounded-xl space-y-4 text-gray-300">
+              <p className="text-lg font-semibold" style={{ color: 'var(--text-primary)' }}>{a.intro}</p>
+              <p className="text-base">{a.introDesc}</p>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img src="/images/Aqualectra_raffinaderij_DUSHI.jpg" alt="Industrial facility" className="w-full h-72 object-cover" />
+            </div>
           </div>
         </motion.div>
 
