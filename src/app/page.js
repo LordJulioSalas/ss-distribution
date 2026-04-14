@@ -67,7 +67,17 @@ export default function Home() {
               <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }}
                 className="glass-effect p-8 rounded-xl hover:border-primary transition-all">
                 <div className="h-16 flex items-center justify-center mb-6">
-                  <span className="text-2xl font-bold text-primary">{partner.name}</span>
+                  {partner.url ? (
+                    <a href={partner.url} target="_blank" rel="noopener noreferrer"
+                      className="group flex items-center gap-2 text-2xl font-bold text-primary hover:opacity-80 transition-all">
+                      {partner.name}
+                      <svg className="w-4 h-4 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <span className="text-2xl font-bold text-primary">{partner.name}</span>
+                  )}
                 </div>
                 <p className="text-gray-400 text-sm mb-4">{partner.description}</p>
                 <ul className="space-y-2">

@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 S&S Construction Engineering. {t.footer.rights}</p>
+          <p>&copy; 2025 S&S Distribution. {t.footer.rights}</p>
         </div>
       </div>
     </footer>

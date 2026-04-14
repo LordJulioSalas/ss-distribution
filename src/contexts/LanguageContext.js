@@ -11,7 +11,7 @@ export const translations = {
       about: 'About',
       products: 'Products',
       industries: 'Industries',
-      brands: 'Brands',
+      brands: 'Clients',
       contact: 'Contact'
     },
     // Home Page
@@ -37,9 +37,9 @@ export const translations = {
       viewProducts: 'View Products',
       advantagesTitle: 'Our Advantages',
       partners: [
-        { name: 'Chemical Global', description: 'Supplier of high-performance specialty chemicals for industrial applications, including:', items: ['Industrial cleaning and degreasing solutions', 'Sanitation and disinfection products', 'Maintenance and operational chemicals'] },
-        { name: 'ZymeFlow', description: 'Provider of advanced chemical cleaning technologies for industrial systems, including:', items: ['Heat exchangers', 'Pipelines', 'Process equipment', 'Supporting efficient, safe, and environmentally responsible maintenance operations.'] },
-        { name: 'Hydranautics (Nitto Group)', description: 'Global leader in membrane technology for water and wastewater treatment, including:', items: ['Reverse Osmosis (RO)', 'Nanofiltration (NF)', 'Ultrafiltration (UF)', 'Serving desalination, industrial processes, and water reuse applications.'] },
+        { name: 'Chemical Global', url: 'https://chemicalsglobal.com/', description: 'Supplier of high-performance specialty chemicals for industrial applications, including:', items: ['Industrial cleaning and degreasing solutions', 'Sanitation and disinfection products', 'Maintenance and operational chemicals'] },
+        { name: 'ZymeFlow', url: 'https://www.zymeflow.com/', description: 'Provider of advanced chemical cleaning technologies for industrial systems, including:', items: ['Heat exchangers', 'Pipelines', 'Process equipment', 'Supporting efficient, safe, and environmentally responsible maintenance operations.'] },
+        { name: 'Hydranautics (Nitto Group)', url: 'https://membranes.com/solutions/products/', description: 'Global leader in membrane technology for water and wastewater treatment, including:', items: ['Reverse Osmosis (RO)', 'Nanofiltration (NF)', 'Ultrafiltration (UF)', 'Serving desalination, industrial processes, and water reuse applications.'] },
       ],
       services: [
         { icon: '💧', text: 'Water treatment systems and membranes' },
@@ -81,57 +81,59 @@ export const translations = {
     // About Page
     about: {
       title: 'About Us',
-      paragraph1: 'S&S Distribution is a Curaçao-based supplier of industrial cleaning chemicals, sanitation solutions, and specialized lubricants.',
-      paragraph2: 'Our company focuses on providing businesses with reliable products that improve maintenance efficiency, sanitation performance, and equipment protection.',
-      paragraph3: 'We support clients across various industries including automotive services, industrial operations, food processing facilities, construction companies, and marine operations.',
-      paragraph4: 'Our commitment is to provide quality products, reliable supply, and professional support to our clients.'
+      intro: 'S&S Distribution is a Caribbean-based industrial solutions provider focused on improving the performance, reliability, and efficiency of operations across Curaçao, Aruba, and Bonaire.',
+      introDesc: 'We support a wide range of industries, including utilities, water treatment, food & beverage, industrial manufacturing, and energy, by delivering specialized solutions in chemical cleaning, water treatment, and industrial chemical supply. With a strong regional presence, we ensure reliable distribution and responsive support across the Dutch Caribbean.',
+      operationalTitle: 'Operational Focus',
+      operationalDesc: 'Our solutions are designed to address common operational challenges across multiple industries, including:',
+      operationalItems: ['Fouling and scaling in heat exchangers and process systems', 'Reduced efficiency in water treatment and desalination systems', 'High maintenance costs and unplanned downtime', 'Inefficient cleaning and sanitation processes'],
+      operationalFooter: 'By combining advanced technologies with technical expertise, we help our clients optimize performance and extend equipment life.',
+      capabilitiesTitle: 'Core Capabilities',
+      capabilities: [
+        { title: 'Industrial Chemical Cleaning', partner: 'Delivered in collaboration with ZymeFlow', items: ['Heat exchangers', 'Pipelines', 'Process equipment'], impact: 'Improved efficiency, reduced downtime, and safer maintenance operations.' },
+        { title: 'Water Treatment Solutions', partner: 'Powered by Hydranautics (Nitto Group)', items: ['Reverse Osmosis (RO) systems', 'Membrane supply and replacement', 'Desalination and water reuse solutions'], impact: 'Reliable water production and optimized system performance.' },
+        { title: 'Industrial Chemical Supply', partner: 'Through Chemical Global', items: ['Degreasers and industrial cleaners', 'Disinfection and sanitation solutions', 'Maintenance and specialty chemicals'], impact: 'Consistent operational performance and compliance with industrial standards.' },
+      ],
+      impactLabel: 'Impact:',
+      regionalTitle: 'Regional Distribution Capability',
+      regionalDesc: 'S&S Distribution provides reliable and efficient distribution services across Curaçao, Aruba, and Bonaire. Our regional logistics capability allows us to ensure product availability, timely delivery, and consistent support for our clients, regardless of their location within the Dutch Caribbean.',
+      advantageTitle: 'Strategic Advantage',
+      advantageDesc: 'Our direct partnerships with globally recognized manufacturers enable us to deliver proven technologies combined with local execution capabilities.',
+      advantageItems: ['Access to world-class industrial solutions', 'Local technical support and fast response times', 'Reduced procurement and logistics complexity', 'Reliable and consistent supply'],
+      approachTitle: 'Our Approach',
+      approachDesc: 'We work closely with our clients to understand their operations and provide practical, results-driven solutions tailored to their needs. Our approach is based on:',
+      approachItems: ['Technical understanding of industrial systems', 'Strong commitment to service and reliability', 'Long-term partnership mindset'],
+      closing: 'S&S Distribution is committed to becoming a trusted industrial partner in the Caribbean, delivering high-performance solutions supported by global expertise and strong regional presence.',
     },
     // Products Page
     products: {
       title: 'Our Products',
+      applicationsLabel: 'Applications:',
+      benefitsLabel: 'Key Benefits:',
+      solutionsLabel: 'Solutions include:',
+      categoriesLabel: 'Product categories:',
       categories: [
         {
-          title: 'Industrial Cleaning Products',
-          description: 'High-performance cleaning chemicals designed for industrial environments',
-          items: [
-            'Heavy-duty degreasers',
-            'Equipment cleaning solutions',
-            'Industrial maintenance cleaners',
-            'Surface cleaning chemicals'
-          ]
+          title: 'Industrial Chemical Cleaning Solutions',
+          description: 'Advanced chemical cleaning services and products designed to restore efficiency and extend the life of industrial equipment.',
+          applications: ['Heat exchangers', 'Pipelines', 'Condensers', 'Process systems'],
+          benefits: ['Improved operational efficiency', 'Reduced downtime', 'Environmentally responsible solutions'],
         },
         {
-          title: 'Auto Care & Fleet Wash',
-          description: 'Products designed for vehicle cleaning and maintenance operations',
-          items: [
-            'Car wash detergents',
-            'Truck wash chemicals',
-            'Engine degreasers',
-            'Vehicle detailing products'
-          ],
-          featured: 'Maxi-Clean 120 - Heavy-duty degreaser'
+          title: 'Water Treatment Solutions',
+          description: 'High-performance membrane technologies for water and wastewater treatment applications.',
+          solutions: ['Reverse Osmosis (RO) systems', 'Membrane replacement and supply', 'Desalination support', 'Water reuse systems'],
+          applications: ['Industrial plants', 'Utilities', 'Desalination facilities'],
         },
         {
-          title: 'Food Processing Sanitation',
-          description: 'Sanitation products designed for food and beverage facilities',
-          items: [
-            'Peracetic acid sanitizers',
-            'Surface sanitation solutions',
-            'Hand sanitizers',
-            'Food-safe cleaning chemicals'
-          ]
+          title: 'Industrial Chemicals Supply',
+          description: 'Reliable supply of high-quality industrial chemicals tailored to operational needs.',
+          items: ['Degreasers and cleaners', 'Disinfectants and sanitizers', 'Maintenance chemicals', 'Specialty formulations'],
         },
         {
-          title: 'Greases and Lubricants',
-          description: 'Industrial and food-grade lubricants designed for equipment protection and performance',
-          items: [
-            'Food-grade lubricants',
-            'Industrial greases',
-            'Marine greases',
-            'Maintenance lubricants'
-          ],
-          brand: 'Includes JAX lubricants'
-        }
+          title: 'Technical Support & Advisory',
+          description: 'We support our clients with technical guidance to ensure optimal product selection and application.',
+          items: ['Product selection support', 'Application guidance', 'Operational optimization', 'On-site recommendations'],
+        },
       ],
       featuredLabel: 'Featured product:',
       brandLabel: ''
@@ -234,7 +236,7 @@ export const translations = {
       about: 'Nosotros',
       products: 'Productos',
       industries: 'Industrias',
-      brands: 'Marcas',
+      brands: 'Clientes',
       contact: 'Contacto'
     },
     // Home Page
@@ -260,9 +262,9 @@ export const translations = {
       viewProducts: 'Ver Productos',
       advantagesTitle: 'Nuestras Ventajas',
       partners: [
-        { name: 'Chemical Global', description: 'Proveedor de químicos especializados de alto rendimiento para aplicaciones industriales.', items: ['Soluciones de limpieza y desengrase industrial', 'Productos de sanitización y desinfección', 'Químicos de mantenimiento y operación'] },
-        { name: 'ZymeFlow', description: 'Proveedor de tecnologías avanzadas de limpieza química para sistemas industriales.', items: ['Intercambiadores de calor', 'Tuberías', 'Equipos de proceso'] },
-        { name: 'Hydranautics', description: 'Líder global en tecnología de membranas para tratamiento de agua y aguas residuales.', items: ['Ósmosis Inversa (RO)', 'Nanofiltración (NF)', 'Ultrafiltración (UF)'] },
+        { name: 'Chemical Global', url: 'https://chemicalsglobal.com/', description: 'Proveedor de químicos especializados de alto rendimiento para aplicaciones industriales.', items: ['Soluciones de limpieza y desengrase industrial', 'Productos de sanitización y desinfección', 'Químicos de mantenimiento y operación'] },
+        { name: 'ZymeFlow', url: 'https://www.zymeflow.com/', description: 'Proveedor de tecnologías avanzadas de limpieza química para sistemas industriales.', items: ['Intercambiadores de calor', 'Tuberías', 'Equipos de proceso'] },
+        { name: 'Hydranautics', url: 'https://membranes.com/solutions/products/', description: 'Líder global en tecnología de membranas para tratamiento de agua y aguas residuales.', items: ['Ósmosis Inversa (RO)', 'Nanofiltración (NF)', 'Ultrafiltración (UF)'] },
       ],
       services: [
         { icon: '💧', text: 'Sistemas de tratamiento de agua y tecnologías de membranas' },
@@ -304,57 +306,59 @@ export const translations = {
     // About Page
     about: {
       title: 'Sobre Nosotros',
-      paragraph1: 'S&S Distribution es un proveedor con sede en Curaçao de productos químicos de limpieza industrial, soluciones de sanitización y lubricantes especializados.',
-      paragraph2: 'Nuestra empresa se enfoca en proporcionar a las empresas productos confiables que mejoran la eficiencia del mantenimiento, el rendimiento de la sanitización y la protección de equipos.',
-      paragraph3: 'Apoyamos a clientes en varias industrias incluyendo servicios automotrices, operaciones industriales, instalaciones de procesamiento de alimentos, empresas de construcción y operaciones marinas.',
-      paragraph4: 'Nuestro compromiso es proporcionar productos de calidad, suministro confiable y soporte profesional a nuestros clientes.'
+      intro: 'S&S Distribution es un proveedor de soluciones industriales con sede en el Caribe, enfocado en mejorar el rendimiento, la confiabilidad y la eficiencia de las operaciones en Curaçao, Aruba y Bonaire.',
+      introDesc: 'Apoyamos a una amplia gama de industrias, incluyendo servicios públicos, tratamiento de agua, alimentos y bebidas, manufactura industrial y energía, ofreciendo soluciones especializadas en limpieza química, tratamiento de agua y suministro de químicos industriales.',
+      operationalTitle: 'Enfoque Operativo',
+      operationalDesc: 'Nuestras soluciones están diseñadas para abordar desafíos operativos comunes en múltiples industrias, incluyendo:',
+      operationalItems: ['Incrustaciones en intercambiadores de calor y sistemas de proceso', 'Reducción de eficiencia en sistemas de tratamiento de agua y desalinización', 'Altos costos de mantenimiento y tiempo de inactividad no planificado', 'Procesos de limpieza y sanitización ineficientes'],
+      operationalFooter: 'Combinando tecnologías avanzadas con experiencia técnica, ayudamos a nuestros clientes a optimizar el rendimiento y extender la vida útil de los equipos.',
+      capabilitiesTitle: 'Capacidades Principales',
+      capabilities: [
+        { title: 'Limpieza Química Industrial', partner: 'En colaboración con ZymeFlow', items: ['Intercambiadores de calor', 'Tuberías', 'Equipos de proceso'], impact: 'Mejora de eficiencia, reducción de tiempo de inactividad y operaciones de mantenimiento más seguras.' },
+        { title: 'Soluciones de Tratamiento de Agua', partner: 'Con Hydranautics (Nitto Group)', items: ['Sistemas de Ósmosis Inversa (RO)', 'Suministro y reemplazo de membranas', 'Soluciones de desalinización y reutilización de agua'], impact: 'Producción confiable de agua y rendimiento optimizado del sistema.' },
+        { title: 'Suministro de Químicos Industriales', partner: 'A través de Chemical Global', items: ['Desengrasantes y limpiadores industriales', 'Soluciones de desinfección y sanitización', 'Químicos de mantenimiento y especialidad'], impact: 'Rendimiento operativo consistente y cumplimiento de estándares industriales.' },
+      ],
+      impactLabel: 'Impacto:',
+      regionalTitle: 'Capacidad de Distribución Regional',
+      regionalDesc: 'S&S Distribution proporciona servicios de distribución confiables y eficientes en Curaçao, Aruba y Bonaire. Nuestra capacidad logística regional nos permite garantizar disponibilidad de productos, entrega oportuna y soporte consistente para nuestros clientes.',
+      advantageTitle: 'Ventaja Estratégica',
+      advantageDesc: 'Nuestras alianzas directas con fabricantes reconocidos mundialmente nos permiten ofrecer tecnologías probadas combinadas con capacidades de ejecución local.',
+      advantageItems: ['Acceso a soluciones industriales de clase mundial', 'Soporte técnico local y tiempos de respuesta rápidos', 'Reducción de la complejidad de adquisición y logística', 'Suministro confiable y consistente'],
+      approachTitle: 'Nuestro Enfoque',
+      approachDesc: 'Trabajamos estrechamente con nuestros clientes para entender sus operaciones y proporcionar soluciones prácticas y orientadas a resultados. Nuestro enfoque se basa en:',
+      approachItems: ['Comprensión técnica de los sistemas industriales', 'Fuerte compromiso con el servicio y la confiabilidad', 'Mentalidad de asociación a largo plazo'],
+      closing: 'S&S Distribution está comprometida a convertirse en un socio industrial de confianza en el Caribe, ofreciendo soluciones de alto rendimiento respaldadas por experiencia global y fuerte presencia regional.',
     },
     // Products Page
     products: {
       title: 'Nuestros Productos',
+      applicationsLabel: 'Aplicaciones:',
+      benefitsLabel: 'Beneficios Clave:',
+      solutionsLabel: 'Soluciones incluidas:',
+      categoriesLabel: 'Categorías de productos:',
       categories: [
         {
-          title: 'Productos de Limpieza Industrial',
-          description: 'Químicos de limpieza de alto rendimiento diseñados para entornos industriales',
-          items: [
-            'Desengrasantes de servicio pesado',
-            'Soluciones de limpieza de equipos',
-            'Limpiadores de mantenimiento industrial',
-            'Químicos de limpieza de superficies'
-          ]
+          title: 'Soluciones de Limpieza Química Industrial',
+          description: 'Servicios y productos de limpieza química avanzados diseñados para restaurar la eficiencia y extender la vida útil de los equipos industriales.',
+          applications: ['Intercambiadores de calor', 'Tuberías', 'Condensadores', 'Sistemas de proceso'],
+          benefits: ['Mejora de la eficiencia operativa', 'Reducción del tiempo de inactividad', 'Soluciones ambientalmente responsables'],
         },
         {
-          title: 'Auto Care & Fleet Wash',
-          description: 'Productos diseñados para operaciones de limpieza y mantenimiento de vehículos',
-          items: [
-            'Detergentes para lavado de autos',
-            'Químicos para lavado de camiones',
-            'Desengrasantes de motores',
-            'Productos de detallado de vehículos'
-          ],
-          featured: 'Maxi-Clean 120 - Desengrasante de servicio pesado'
+          title: 'Soluciones de Tratamiento de Agua',
+          description: 'Tecnologías de membranas de alto rendimiento para aplicaciones de tratamiento de agua y aguas residuales.',
+          solutions: ['Sistemas de Ósmosis Inversa (RO)', 'Reemplazo y suministro de membranas', 'Soporte para desalinización', 'Sistemas de reutilización de agua'],
+          applications: ['Plantas industriales', 'Servicios públicos', 'Instalaciones de desalinización'],
         },
         {
-          title: 'Sanitización para Procesamiento de Alimentos',
-          description: 'Productos de sanitización diseñados para instalaciones de alimentos y bebidas',
-          items: [
-            'Sanitizadores de ácido peracético',
-            'Soluciones de sanitización de superficies',
-            'Sanitizadores de manos',
-            'Químicos de limpieza aptos para alimentos'
-          ]
+          title: 'Suministro de Químicos Industriales',
+          description: 'Suministro confiable de químicos industriales de alta calidad adaptados a las necesidades operativas.',
+          items: ['Desengrasantes y limpiadores', 'Desinfectantes y sanitizadores', 'Químicos de mantenimiento', 'Formulaciones especiales'],
         },
         {
-          title: 'Grasas y Lubricantes',
-          description: 'Lubricantes industriales y de grado alimenticio diseñados para protección y rendimiento de equipos',
-          items: [
-            'Lubricantes de grado alimenticio',
-            'Grasas industriales',
-            'Grasas marinas',
-            'Lubricantes de mantenimiento'
-          ],
-          brand: 'Incluye lubricantes JAX'
-        }
+          title: 'Soporte Técnico y Asesoría',
+          description: 'Apoyamos a nuestros clientes con orientación técnica para garantizar la selección y aplicación óptima de productos.',
+          items: ['Soporte en selección de productos', 'Orientación de aplicación', 'Optimización operativa', 'Recomendaciones en sitio'],
+        },
       ],
       featuredLabel: 'Producto destacado:',
       brandLabel: ''
@@ -457,7 +461,7 @@ export const translations = {
       about: 'Over Ons',
       products: 'Producten',
       industries: 'Industrieën',
-      brands: 'Merken',
+      brands: 'Klanten',
       contact: 'Contact'
     },
     // Home Page
@@ -483,9 +487,9 @@ export const translations = {
       viewProducts: 'Bekijk Producten',
       advantagesTitle: 'Onze Voordelen',
       partners: [
-        { name: 'Chemical Global', description: 'Leverancier van hoogwaardige speciale chemicaliën voor industriële toepassingen.', items: ['Industriële reinigings- en ontvettingsoplossingen', 'Sanitatie- en desinfectieproducten', 'Onderhouds- en operationele chemicaliën'] },
-        { name: 'ZymeFlow', description: 'Leverancier van geavanceerde chemische reinigingstechnologieën voor industriële systemen.', items: ['Warmtewisselaars', 'Pijpleidingen', 'Procesapparatuur'] },
-        { name: 'Hydranautics', description: 'Wereldleider in membraantechnologie voor water- en afvalwaterbehandeling.', items: ['Omgekeerde osmose (RO)', 'Nanofiltratie (NF)', 'Ultrafiltratie (UF)'] },
+        { name: 'Chemical Global', url: 'https://chemicalsglobal.com/', description: 'Leverancier van hoogwaardige speciale chemicaliën voor industriële toepassingen.', items: ['Industriële reinigings- en ontvettingsoplossingen', 'Sanitatie- en desinfectieproducten', 'Onderhouds- en operationele chemicaliën'] },
+        { name: 'ZymeFlow', url: 'https://www.zymeflow.com/', description: 'Leverancier van geavanceerde chemische reinigingstechnologieën voor industriële systemen.', items: ['Warmtewisselaars', 'Pijpleidingen', 'Procesapparatuur'] },
+        { name: 'Hydranautics', url: 'https://membranes.com/solutions/products/', description: 'Wereldleider in membraantechnologie voor water- en afvalwaterbehandeling.', items: ['Omgekeerde osmose (RO)', 'Nanofiltratie (NF)', 'Ultrafiltratie (UF)'] },
       ],
       services: [
         { icon: '💧', text: 'Waterbehandelingssystemen en membraantechnologieën' },
@@ -527,57 +531,59 @@ export const translations = {
     // About Page
     about: {
       title: 'Over Ons',
-      paragraph1: 'S&S Distribution is een in Curaçao gevestigde leverancier van industriële reinigingschemicaliën, sanitatie oplossingen en gespecialiseerde smeermiddelen.',
-      paragraph2: 'Ons bedrijf richt zich op het leveren van betrouwbare producten aan bedrijven die de onderhoudsefficiëntie, sanitatieprestaties en apparatuurbescherming verbeteren.',
-      paragraph3: 'We ondersteunen klanten in verschillende industrieën, waaronder automotive diensten, industriële operaties, voedselverwerkingsfaciliteiten, bouwbedrijven en maritieme operaties.',
-      paragraph4: 'Onze toewijding is om kwaliteitsproducten, betrouwbare levering en professionele ondersteuning aan onze klanten te bieden.'
+      intro: 'S&S Distribution is een in het Caribisch gebied gevestigde leverancier van industriële oplossingen, gericht op het verbeteren van de prestaties, betrouwbaarheid en efficiëntie van operaties in Curaçao, Aruba en Bonaire.',
+      introDesc: 'Wij ondersteunen een breed scala aan industrieën, waaronder nutsbedrijven, waterbehandeling, voeding & dranken, industriële productie en energie, door gespecialiseerde oplossingen te leveren op het gebied van chemische reiniging, waterbehandeling en industriële chemicaliënlevering.',
+      operationalTitle: 'Operationele Focus',
+      operationalDesc: 'Onze oplossingen zijn ontworpen om veelvoorkomende operationele uitdagingen in meerdere industrieën aan te pakken, waaronder:',
+      operationalItems: ['Vervuiling en aanslag in warmtewisselaars en processen', 'Verminderde efficiëntie in waterbehandeling en ontziltingssystemen', 'Hoge onderhoudskosten en ongeplande downtime', 'Inefficiënte reinigings- en sanitatieprocessen'],
+      operationalFooter: 'Door geavanceerde technologieën te combineren met technische expertise, helpen wij onze klanten de prestaties te optimaliseren en de levensduur van apparatuur te verlengen.',
+      capabilitiesTitle: 'Kerncompetenties',
+      capabilities: [
+        { title: 'Industriële Chemische Reiniging', partner: 'In samenwerking met ZymeFlow', items: ['Warmtewisselaars', 'Pijpleidingen', 'Procesapparatuur'], impact: 'Verbeterde efficiëntie, minder downtime en veiligere onderhoudsoperaties.' },
+        { title: 'Waterbehandelingsoplossingen', partner: 'Met Hydranautics (Nitto Group)', items: ['Omgekeerde osmose (RO) systemen', 'Membraanlevering en -vervanging', 'Ontzilting en waterhergebruiksoplossingen'], impact: 'Betrouwbare waterproductie en geoptimaliseerde systeemprestaties.' },
+        { title: 'Levering van Industriële Chemicaliën', partner: 'Via Chemical Global', items: ['Ontvetters en industriële reinigingsmiddelen', 'Desinfectie- en sanitatieoplossingen', 'Onderhouds- en speciale chemicaliën'], impact: 'Consistente operationele prestaties en naleving van industriële normen.' },
+      ],
+      impactLabel: 'Impact:',
+      regionalTitle: 'Regionale Distributiecapaciteit',
+      regionalDesc: 'S&S Distribution biedt betrouwbare en efficiënte distributiediensten in Curaçao, Aruba en Bonaire. Onze regionale logistieke capaciteit stelt ons in staat productbeschikbaarheid, tijdige levering en consistente ondersteuning te garanderen.',
+      advantageTitle: 'Strategisch Voordeel',
+      advantageDesc: 'Onze directe partnerschappen met wereldwijd erkende fabrikanten stellen ons in staat bewezen technologieën te leveren gecombineerd met lokale uitvoeringsmogelijkheden.',
+      advantageItems: ['Toegang tot industriële oplossingen van wereldklasse', 'Lokale technische ondersteuning en snelle responstijden', 'Verminderde inkoop- en logistieke complexiteit', 'Betrouwbare en consistente levering'],
+      approachTitle: 'Onze Aanpak',
+      approachDesc: 'Wij werken nauw samen met onze klanten om hun operaties te begrijpen en praktische, resultaatgerichte oplossingen te bieden. Onze aanpak is gebaseerd op:',
+      approachItems: ['Technisch begrip van industriële systemen', 'Sterke toewijding aan service en betrouwbaarheid', 'Langetermijn partnerschapsmentaliteit'],
+      closing: 'S&S Distribution is toegewijd aan het worden van een vertrouwde industriële partner in het Caribisch gebied, met hoogwaardige oplossingen ondersteund door wereldwijde expertise en sterke regionale aanwezigheid.',
     },
     // Products Page
     products: {
       title: 'Onze Producten',
+      applicationsLabel: 'Toepassingen:',
+      benefitsLabel: 'Belangrijkste Voordelen:',
+      solutionsLabel: 'Oplossingen omvatten:',
+      categoriesLabel: 'Productcategorieën:',
       categories: [
         {
-          title: 'Industriële Reinigingsproducten',
-          description: 'Hoogwaardige reinigingschemicaliën ontworpen voor industriële omgevingen',
-          items: [
-            'Zware ontvetter',
-            'Apparatuur reinigingsoplossingen',
-            'Industriële onderhoudsreinigers',
-            'Oppervlakte reinigingschemicaliën'
-          ]
+          title: 'Industriële Chemische Reinigingsoplossingen',
+          description: 'Geavanceerde chemische reinigingsdiensten en -producten ontworpen om de efficiëntie te herstellen en de levensduur van industriële apparatuur te verlengen.',
+          applications: ['Warmtewisselaars', 'Pijpleidingen', 'Condensatoren', 'Processen systemen'],
+          benefits: ['Verbeterde operationele efficiëntie', 'Verminderde downtime', 'Milieuvriendelijke oplossingen'],
         },
         {
-          title: 'Auto Care & Fleet Wash',
-          description: 'Producten ontworpen voor voertuigreiniging en onderhoudsoperaties',
-          items: [
-            'Autowas detergenten',
-            'Vrachtwagen was chemicaliën',
-            'Motor ontvetters',
-            'Voertuig detailing producten'
-          ],
-          featured: 'Maxi-Clean 120 - Zware ontvetter'
+          title: 'Waterbehandelingsoplossingen',
+          description: 'Hoogwaardige membraantechnologieën voor water- en afvalwaterbehandelingstoepassingen.',
+          solutions: ['Omgekeerde osmose (RO) systemen', 'Membraanvervanging en -levering', 'Ondersteuning bij ontzilting', 'Waterhergebruiksystemen'],
+          applications: ['Industriële fabrieken', 'Nutsbedrijven', 'Ontziltingsfaciliteiten'],
         },
         {
-          title: 'Voedselverwerkings Sanitatie',
-          description: 'Sanitatieproducten ontworpen voor voedsel- en drankfaciliteiten',
-          items: [
-            'Perazijnzuur sanitizers',
-            'Oppervlakte sanitatie oplossingen',
-            'Hand sanitizers',
-            'Voedselveilige reinigingschemicaliën'
-          ]
+          title: 'Levering van Industriële Chemicaliën',
+          description: 'Betrouwbare levering van hoogwaardige industriële chemicaliën op maat van operationele behoeften.',
+          items: ['Ontvetters en reinigingsmiddelen', 'Desinfectanten en sanitizers', 'Onderhoudschemicaliën', 'Speciale formuleringen'],
         },
         {
-          title: 'Vetten en Smeermiddelen',
-          description: 'Industriële en voedselgeschikte smeermiddelen ontworpen voor apparatuurbescherming en prestaties',
-          items: [
-            'Voedselgeschikte smeermiddelen',
-            'Industriële vetten',
-            'Maritieme vetten',
-            'Onderhoud smeermiddelen'
-          ],
-          brand: 'Inclusief JAX smeermiddelen'
-        }
+          title: 'Technische Ondersteuning & Advies',
+          description: 'Wij ondersteunen onze klanten met technische begeleiding voor optimale productselectie en toepassing.',
+          items: ['Ondersteuning bij productselectie', 'Toepassingsbegeleiding', 'Operationele optimalisatie', 'Aanbevelingen ter plaatse'],
+        },
       ],
       featuredLabel: 'Uitgelicht product:',
       brandLabel: ''
@@ -680,7 +686,7 @@ export const translations = {
       about: 'Tokante Nos',
       products: 'Produktonan',
       industries: 'Industrianan',
-      brands: 'Markanan',
+      brands: 'Klientenan',
       contact: 'Kontakto'
     },
     // Home Page
@@ -706,9 +712,9 @@ export const translations = {
       viewProducts: 'Mira Produktonan',
       advantagesTitle: 'Nos Bentahanan',
       partners: [
-        { name: 'Chemical Global', description: 'Proveedor di kímiko spesializá di haltu rendimentu pa aplikashonnan industrial.', items: ['Solushonnan di limpiesa i desengrase industrial', 'Produktonan di sanitisashon i desinfekshon', 'Kímiko di mantenementu i operashon'] },
-        { name: 'ZymeFlow', description: 'Proveedor di teknolohianan avansá di limpiesa kímiko pa sistemanan industrial.', items: ['Intercambiadornan di kalor', 'Tuberanan', 'Ekipo di proseso'] },
-        { name: 'Hydranautics', description: 'Lider mundial den teknologia di membrana pa tratamento di awa i awa residual.', items: ['Ósmosis Inverso (RO)', 'Nanofiltrasion (NF)', 'Ultrafiltrasion (UF)'] },
+        { name: 'Chemical Global', url: 'https://chemicalsglobal.com/', description: 'Proveedor di kímiko spesializá di haltu rendimentu pa aplikashonnan industrial.', items: ['Solushonnan di limpiesa i desengrase industrial', 'Produktonan di sanitisashon i desinfekshon', 'Kímiko di mantenementu i operashon'] },
+        { name: 'ZymeFlow', url: 'https://www.zymeflow.com/', description: 'Proveedor di teknolohianan avansá di limpiesa kímiko pa sistemanan industrial.', items: ['Intercambiadornan di kalor', 'Tuberanan', 'Ekipo di proseso'] },
+        { name: 'Hydranautics', url: 'https://membranes.com/solutions/products/', description: 'Lider mundial den teknologia di membrana pa tratamento di awa i awa residual.', items: ['Ósmosis Inverso (RO)', 'Nanofiltrasion (NF)', 'Ultrafiltrasion (UF)'] },
       ],
       services: [
         { icon: '💧', text: 'Sistemanan di tratamento di awa i teknolohianan di membrana' },
@@ -750,57 +756,59 @@ export const translations = {
     // About Page
     about: {
       title: 'Tokante Nos',
-      paragraph1: 'S&S Distribution ta un proveedor situá na Kòrsou di kímiko di limpiesa industrial, solushonnan di sanitisashon i lubrikante spesializá.',
-      paragraph2: 'Nos kompania ta enfoká riba provee produktonan konfiabel na negoshinan ku ta mehora efisiensia di mantenementu, rendimentu di sanitisashon i protekshon di ekipo.',
-      paragraph3: 'Nos ta suportá klientenan den diferente industrianan inkluí servisionan outomotivo, operashonnan industrial, fasilidat di prosesamentu di kuminda, kompanianan di konstrukshon i operashonnan marino.',
-      paragraph4: 'Nos kompromiso ta pa provee produktonan di kalidat, suministro konfiabel i soporte profesional na nos klientenan.'
+      intro: 'S&S Distribution ta un proveedor di solushonnan industrial ku sede den Karibe, enfoká riba mehora rendimentu, konfiabilidat i efisiensia di operashonnan na Kòrsou, Aruba i Boneiru.',
+      introDesc: 'Nos ta soportá un amplio rango di industrianan, inkluí servisio públiko, tratamento di awa, kuminda i bebida, fabrikashon industrial i energia, ofresiendo solushonnan spesializá den limpiesa kímiko, tratamento di awa i suministro di kímiko industrial.',
+      operationalTitle: 'Enfoke Operashonal',
+      operationalDesc: 'Nos solushonnan ta diseñá pa atendé desafionan operashonal komun den múltiple industrianan, inkluí:',
+      operationalItems: ['Inkrustashon den intercambiadornan di kalor i sistemanan di proseso', 'Redukshon di efisiensia den sistemanan di tratamento di awa i desalinisashon', 'Gastonan haltu di mantenementu i tempo di inaktividat no planiá', 'Prosonan di limpiesa i sanitisashon inefisiente'],
+      operationalFooter: 'Kombinando teknolohianan avansá ku ekspertisia tékniko, nos ta yuda nos klientenan optimisá rendimentu i extendé bida útil di ekipo.',
+      capabilitiesTitle: 'Kapasidatnan Prinsipal',
+      capabilities: [
+        { title: 'Limpiesa Kímiko Industrial', partner: 'Den kolaborashon ku ZymeFlow', items: ['Intercambiadornan di kalor', 'Tuberanan', 'Ekipo di proseso'], impact: 'Mehora di efisiensia, redukshon di downtime i operashonnan di mantenementu mas sigur.' },
+        { title: 'Solushonnan di Tratamento di Awa', partner: 'Ku Hydranautics (Nitto Group)', items: ['Sistemanan di Ósmosis Inverso (RO)', 'Suministro i reemplaso di membrana', 'Solushonnan di desalinisashon i reutilisashon di awa'], impact: 'Produkshon konfiabel di awa i rendimentu optimisá di sistema.' },
+        { title: 'Suministro di Kímiko Industrial', partner: 'Via Chemical Global', items: ['Desengrasante i limpiadornan industrial', 'Solushonnan di desinfekshon i sanitisashon', 'Kímiko di mantenementu i espesialidá'], impact: 'Rendimentu operashonal konsistente i kumplimentu ku estándarnan industrial.' },
+      ],
+      impactLabel: 'Impakto:',
+      regionalTitle: 'Kapasidad di Distribushon Regional',
+      regionalDesc: 'S&S Distribution ta provee servisionan di distribushon konfiabel i efisiente na Kòrsou, Aruba i Boneiru. Nos kapasidad logístiko regional nos permite garantisá disponibilidat di produkto, entrega oportuno i soporte konsistente pa nos klientenan.',
+      advantageTitle: 'Bentaha Estratégiko',
+      advantageDesc: 'Nos aliansanan direkto ku fabrikante rekonosí mundialmente nos permite ofresé teknolohianan probá kombiná ku kapasidatnan di eheкushon lokal.',
+      advantageItems: ['Akseso na solushonnan industrial di klas mundial', 'Soporte tékniko lokal i temponan di respuesta rápido', 'Redukshon di komplejidad di adkisishon i logístika', 'Suministro konfiabel i konsistente'],
+      approachTitle: 'Nos Enfoke',
+      approachDesc: 'Nos ta traha estrecho ku nos klientenan pa komprondé nan operashonnan i provee solushonnan prátiko i orientá na resultadonan. Nos enfoke ta basá riba:',
+      approachItems: ['Komprenshon tékniko di sistemanan industrial', 'Kompromiso fuerte ku servicio i konfiabilidat', 'Mentalidad di aliansa a largo plaso'],
+      closing: 'S&S Distribution ta kompromití pa bira un socio industrial di konfiansa den Karibe, ofresiendo solushonnan di haltu rendimentu respaldá pa ekspertisia global i presencia regional fuerte.',
     },
     // Products Page
     products: {
       title: 'Nos Produktonan',
+      applicationsLabel: 'Aplikashonnan:',
+      benefitsLabel: 'Benefishionan Klave:',
+      solutionsLabel: 'Solushonnan inkluí:',
+      categoriesLabel: 'Kategorianan di produkto:',
       categories: [
         {
-          title: 'Produktonan di Limpiesa Industrial',
-          description: 'Kímiko di limpiesa di haltu rendimentu diseñá pa ambiente industrial',
-          items: [
-            'Desengrasante di servicio pisa',
-            'Solushonnan di limpiesa di ekipo',
-            'Limpiadornan di mantenementu industrial',
-            'Kímiko di limpiesa di superficie'
-          ]
+          title: 'Solushonnan di Limpiesa Kímiko Industrial',
+          description: 'Servisionan i produktonan di limpiesa kímiko avansá diseñá pa restaurá efisiensia i extendé bida útil di ekipo industrial.',
+          applications: ['Intercambiadornan di kalor', 'Tuberanan', 'Condensadornan', 'Sistemanan di proseso'],
+          benefits: ['Mehora di efisiensia operashonal', 'Redukshon di tempo di inaktividat', 'Solushonnan responsabel pa medio ambiente'],
         },
         {
-          title: 'Auto Care & Fleet Wash',
-          description: 'Produktonan diseñá pa operashonnan di limpiesa i mantenementu di vehíkulo',
-          items: [
-            'Detergente pa laba outo',
-            'Kímiko pa laba kamion',
-            'Desengrasante di motor',
-            'Produktonan di detallado di vehíkulo'
-          ],
-          featured: 'Maxi-Clean 120 - Desengrasante di servicio pisa'
+          title: 'Solushonnan di Tratamento di Awa',
+          description: 'Teknolohianan di membrana di haltu rendimentu pa aplikashonnan di tratamento di awa i awa residual.',
+          solutions: ['Sistemanan di Ósmosis Inverso (RO)', 'Reemplaso i suministro di membrana', 'Soporte pa desalinisashon', 'Sistemanan di reutilisashon di awa'],
+          applications: ['Plantanan industrial', 'Servisio públiko', 'Fasilidat di desalinisashon'],
         },
         {
-          title: 'Sanitisashon pa Prosesamentu di Kuminda',
-          description: 'Produktonan di sanitisashon diseñá pa fasilidat di kuminda i bebida',
-          items: [
-            'Sanitisador di asido perasétiko',
-            'Solushonnan di sanitisashon di superficie',
-            'Sanitisador di man',
-            'Kímiko di limpiesa apto pa kuminda'
-          ]
+          title: 'Suministro di Kímiko Industrial',
+          description: 'Suministro konfiabel di kímiko industrial di haltu kalidat adaptá na nesesidatnan operashonal.',
+          items: ['Desengrasante i limpiadornan', 'Desinfektante i sanitisadornan', 'Kímiko di mantenementu', 'Formulashonnan spesial'],
         },
         {
-          title: 'Grasa i Lubrikante',
-          description: 'Lubrikante industrial i di grado alimentisio diseñá pa protekshon i rendimentu di ekipo',
-          items: [
-            'Lubrikante di grado alimentisio',
-            'Grasa industrial',
-            'Grasa marino',
-            'Lubrikante di mantenementu'
-          ],
-          brand: 'Inkluí lubrikante JAX'
-        }
+          title: 'Soporte Tékniko i Asesoría',
+          description: 'Nos ta soportá nos klientenan ku guia tékniko pa garantisá selekshon i aplikashon óptimo di produkto.',
+          items: ['Soporte den selekshon di produkto', 'Guia di aplikashon', 'Optimisashon operashonal', 'Rekomendashonnan na sitio'],
+        },
       ],
       featuredLabel: 'Produkto destacá:',
       brandLabel: ''
@@ -939,5 +947,7 @@ export function useLanguage() {
   }
   return context
 }
+
+
 
 
