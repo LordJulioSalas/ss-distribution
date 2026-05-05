@@ -65,20 +65,32 @@ export default function About() {
         {/* Regional Distribution */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glass-effect p-8 rounded-xl">
           <h2 className="text-2xl font-bold mb-4 text-primary">{a.regionalTitle}</h2>
-          <p className="text-gray-300">{a.regionalDesc}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <p className="text-gray-300">{a.regionalDesc}</p>
+            <div className="rounded-xl overflow-hidden">
+              <img src="/images/export-incentives-cinex-image.jpg" alt="Regional distribution" className="w-full h-48 object-cover" />
+            </div>
+          </div>
         </motion.div>
 
         {/* Strategic Advantage */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glass-effect p-8 rounded-xl">
           <h2 className="text-2xl font-bold mb-4 text-primary">{a.advantageTitle}</h2>
-          <p className="text-gray-300 mb-4">{a.advantageDesc}</p>
-          <ul className="space-y-2">
-            {a.advantageItems.map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-gray-400">
-                <span className="text-primary mt-1">›</span>{item}
-              </li>
-            ))}
-          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div>
+              <p className="text-gray-300 mb-4">{a.advantageDesc}</p>
+              <ul className="space-y-2">
+                {a.advantageItems.map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-gray-400">
+                    <span className="text-primary mt-1">›</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-xl overflow-hidden">
+              <img src="/images/new-direction-for-damen-shiprepair-curacao-top.avif" alt="Strategic advantage" className="w-full h-52 object-cover" />
+            </div>
+          </div>
         </motion.div>
 
         {/* Our Approach */}

@@ -18,8 +18,7 @@ export default function Industries() {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {t.home.industries.map((ind, i) => (
-            <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }}
+          {t.home.industries.map((ind, i) => (            <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }} viewport={{ once: true }}
               className="glass-effect p-8 rounded-xl hover:border-primary transition-all">
               <div className="text-5xl mb-4">{ind.icon}</div>
               <h2 className="text-xl font-bold mb-4" style={{ color: 'var(--primary)' }}>{ind.name}</h2>
@@ -35,6 +34,10 @@ export default function Industries() {
             </motion.div>
           ))}
         </div>
+        {/* Bottom image */}
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-12 rounded-2xl overflow-hidden h-64">
+          <img src="/images/barges-harbour-curoil-sole-supplier-fuel-oils-curaçao-bonaire-your-one-stop-location-bunker-fuels-as-43882167.webp" alt="Caribbean operations" className="w-full h-full object-cover" />
+        </motion.div>
       </div>
     </main>
   )

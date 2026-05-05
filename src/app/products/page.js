@@ -17,6 +17,10 @@ export default function Products() {
         </motion.h1>
 
         <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+          {/* Banner image */}
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="rounded-2xl overflow-hidden h-56 mb-4">
+            <img src="/images/Curacao_Koraal_Finished-6-1352x760.jpg" alt="Industrial solutions" className="w-full h-full object-cover" />
+          </motion.div>
           {t.products.categories.map((product, index) => (
             <motion.div
               key={index}
