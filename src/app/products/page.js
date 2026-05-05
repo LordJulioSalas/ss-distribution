@@ -1,6 +1,9 @@
 'use client'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import TiltCard from '@/components/TiltCard'
+import RevealText from '@/components/RevealText'
+import ImageDistortion from '@/components/ImageDistortion'
 
 export default function Products() {
   const { t } = useLanguage()
@@ -13,25 +16,24 @@ export default function Products() {
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-bold mb-16 text-center gradient-text"
         >
-          {t.products.title}
+          <RevealText text={t.products.title} />
         </motion.h1>
 
         <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           {/* Banner image */}
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="rounded-2xl overflow-hidden h-56 mb-4">
-            <img src="/images/Curacao_Koraal_Finished-6-1352x760.jpg" alt="Industrial solutions" className="w-full h-full object-cover" />
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
+            <ImageDistortion src="/images/Curacao_Koraal_Finished-6-1352x760.jpg" alt="Industrial solutions" className="h-56 mb-4" />
           </motion.div>
           {t.products.categories.map((product, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="glass-effect p-8 rounded-xl hover:border-primary transition-all"
-            >
-              <h2 className="text-2xl font-bold mb-3 text-primary">{product.title}</h2>
-              <p className="text-gray-300 mb-6">{product.description}</p>
+            <TiltCard key={index} className="glass-effect p-8 rounded-xl hover:border-primary transition-all">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="text-2xl font-bold mb-3 text-primary">{product.title}</h2>
+                <p className="text-gray-300 mb-6">{product.description}</p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Applications */}
@@ -98,7 +100,8 @@ export default function Products() {
                   </div>
                 )}
               </div>
-            </motion.div>
+              </motion.div>
+            </TiltCard>
           ))}
         </div>
       </div>
